@@ -2,7 +2,7 @@
 
 ## Quick start
 
-Open `index.html` using your favourite browser.
+Open `index.html` using your favourite browser (not PhantomJS).
 
 ## Usage
 
@@ -11,4 +11,4 @@ Open `index.html` using your favourite browser.
 
 ## License
 
-See `LICENSE.md`.
+See `LICENSE`.
