@@ -8,7 +8,6 @@ Studio.$(document)
 	var config = {
 		apiKey: apiKey,
 		map: mapId || 'AVLi4IKVzzDc1QqSK-km',
-		mode: Studio.core.Map.Mode.MAP,
 		mapworksPath: 'https://app.dev.mapworks.io',
 		resourcesPath: 'https://api.dev.mapworks.io/resources',
 		mapPath: 'https://api.dev.mapworks.io/maps/latest',

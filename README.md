@@ -2,7 +2,7 @@
 
 ## Quick start
 
-Open `index.html` using your favourite browser (not PhantomJS).
+Open `index.html` using your favourite browser.
 
 ## Usage
 
