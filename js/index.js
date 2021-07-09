@@ -2,22 +2,12 @@ Studio.$(document)
 .ready(function(){
 	var $ = Studio.$;
 	var _ = Studio._;
-	var mapId = _.urlParam('map');
-	var apiKey = _.urlParam('apiKey');
+	var map = _.urlParam('id');
 
 	var config = {
-		apiKey: apiKey,
-		map: mapId || 'AVLi4IKVzzDc1QqSK-km',
-		mapworksPath: 'https://app.dev.mapworks.io',
-		resourcesPath: 'https://api.dev.mapworks.io/resources',
-		mapPath: 'https://api.dev.mapworks.io/maps/latest',
-		studioPath: 'https://api.dev.mapworks.io/studio/latest',
-		mapworksSessionPath: 'https://app.dev.mapworks.io/users/plugins/mapworks/getLoginStatus.php',
-		authentication: {
-			header: 'authorization',
-			realm: 'Mapworks',
-			scheme: 'mapworks'
-		},
+		map: map || 'AVLi4IKVzzDc1QqSK-km',
+		mapworksPath: 'https://app.dev.mapworks.io/content',
+		access: Studio.core.Map.Access.ANONYMOUS,
 		navigationControl: false,
 		scaleControl: true,
 		toolbarControl: true,
