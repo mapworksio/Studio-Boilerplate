@@ -2,10 +2,10 @@ Studio.$(document)
 .ready(function(){
 	var $ = Studio.$;
 	var _ = Studio._;
-	var map = _.urlParam('id');
+	var opt = _.urlParamObj();
 
 	var config = {
-		map: map || 'AVLi4IKVzzDc1QqSK-km',
+		map: opt.id || 'AVLi4IKVzzDc1QqSK-km',
 		mapworksPath: 'https://app.dev.mapworks.io/content',
 		access: Studio.core.Map.Access.ANONYMOUS,
 		navigationControl: false,
