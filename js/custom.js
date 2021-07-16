@@ -1,18 +1,17 @@
-window.customWidget = function(map){
-	var toolbar = map.getControl('toolbar');
-	var _ = Studio._;
-	var Backbone = Studio.Backbone;
+export const customWidget = function(map){
+	const { Studio } = window;
+	const toolbar = map.getControl('toolbar');
 
 	// Add logo
 	map.getControlRegion('bottomRight')
 	.prepend('<img src="./mapworks.png"></img>');
 
-	var TabModel = Studio.app.component.panel.tab.Model;
+	const TabModel = Studio.app.component.panel.tab.Model;
 
 	// Create custom view
-	const MyView = Backbone.View.extend({
+	const MyView = Studio.Backbone.View.extend({
 		template: '<div class="widget-container">Custom Widget!</div>',
-		render: function() {
+		render: function(){
 			this.$el.html(this.template);
 			return this;
 		},
