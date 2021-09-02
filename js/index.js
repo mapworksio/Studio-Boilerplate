@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function(event){
 		}
 	}
 
-	const map = Studio.init('#embed1', config)
+	const map = window.map = Studio.init('#embed1', config)
 	.once('ready', function(){
 		customWidget(map);
 	});
