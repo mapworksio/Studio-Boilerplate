@@ -19,26 +19,8 @@ document.addEventListener('DOMContentLoaded', function(event){
 		}
 	}
 
-	const map = window.map = new Studio.core.Map('#embed1', config);
-	map.load(function(err, map) {
-		if (err) {
-			Studio.app.component.dialogue.Dialogue.alert({
-				title: 'Error loading map',
-				message: err
-			});
-		} else {
-			console.log("Map Load");
-		}
-	})
+	const map = window.map = Studio.init('#embed1', config)
 	.once('ready', function(){
-		map.off('fetch:failed');
-		// Initialise app components
-		Studio.app.App.init(Studio, map, config);
-
 		customWidget(map);
-	})
-	.once('fetch:failed', function(response){
-		alert(`fetch failed! ${response.statusText}`);
 	});
-
 });
