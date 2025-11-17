@@ -3,18 +3,18 @@ import { customWidget } from './custom.js';
 
 document.addEventListener('DOMContentLoaded', function(event){
 	const { Studio } = window;
-	const { id = 'AVLi4IKVzzDc1QqSK-km' } = Studio._.urlParamObj();
+	const { id = 'AXBR6sWIAAA2ac12AAAA' } = Studio._.urlParamObj();
 
 	const config = {
 		map: id,
-		mapworksPath: 'https://app.dev.mapworks.io',
+		mapworksPath: 'https://app.mapworks.io',
 		access: Studio.core.Map.Access.ANONYMOUS,
 		navigationControl: false,
 		scaleControl: true,
 		toolbarControl: true,
 		zoomControl: false,
 		mapworksLoginProvider: {
-			client_id: '4td941kup5d7pq38rq7gq6utu',
+			client_id: '3mvor82v8k8f6nbi4f8bpihsom',
 			popup_redirect_uri: 'http://localhost:8080/openId.html',
 			anonymousUser: 'noreply@public-anonymous.mapworks.io',
 		}
