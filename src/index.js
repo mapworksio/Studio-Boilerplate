@@ -1,3 +1,4 @@
+import './css/index.css';
 import { customWidget } from './custom.js';
 
 document.addEventListener('DOMContentLoaded', function(event){
@@ -15,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function(event){
 		mapworksLoginProvider: {
 			client_id: '4td941kup5d7pq38rq7gq6utu',
 			popup_redirect_uri: 'http://localhost:8080/openId.html',
-			anonymousIdp: 'public-anonymous'
+			anonymousUser: 'noreply@public-anonymous.mapworks.io',
 		}
 	}
 

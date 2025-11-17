@@ -1,3 +1,5 @@
+import './css/custom.css';
+
 export const customWidget = function(map){
 	const { Studio } = window;
 	const toolbar = map.getControl('toolbar');
